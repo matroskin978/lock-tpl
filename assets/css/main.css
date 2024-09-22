@@ -1,0 +1,72 @@
+:root {
+    --bg-color: #fff;
+    --grey-color: #454f5b;
+    --black-color: #161c24;
+    --main-color: #4295e4;
+    --stroke-color: #eaeaea;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/sfpro/SFProText-Light.woff2') format('woff2'),
+        url('../fonts/sfpro/SFProText-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/sfpro/SFProText-Regular.woff2') format('woff2'),
+        url('../fonts/sfpro/SFProText-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/sfpro/SFProText-Medium.woff2') format('woff2'),
+        url('../fonts/sfpro/SFProText-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/sfpro/SFProText-Semibold.woff2') format('woff2'),
+        url('../fonts/sfpro/SFProText-Semibold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/sfpro/SFProText-Bold.woff2') format('woff2'),
+        url('../fonts/sfpro/SFProText-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ==================General==================== */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-width: 320px;
+    font-size: 16px;
+    font-family: 'SF Pro', sans-serif;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--bg-color);
+    color: var(--grey-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==================General==================== */
