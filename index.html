@@ -13,11 +13,139 @@
 
 <body>
 
+    <header class="header">
 
-    <h1>Hello, World!</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit explicabo eum voluptates? Repudiandae possimus
-        provident quos eligendi maiores odio id amet laborum nisi neque a, hic laboriosam libero similique earum.</p>
+        <div class="top-line">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="text-center flex-grow-1">
+                        Скидка 10% по промокоду "ZAMOK" на все заказы до 10.09
+                    </div>
+                    <div class="callback">
+                        <a href="#">Обратный звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- ./top-line -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.svg" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Каталог
+                            </a>
+                            <div class="container dropdown-menu megamenu animate slideIn" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-6">
+                                        <h6 class="title">Электронные замки</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Врезные замки</a></li>
+                                            <li><a href="#">Замки для квартиры</a></li>
+                                            <li><a href="#">Замки для дома</a></li>
+                                            <li><a href="#">Замки для отелей</a></li>
+                                            <li><a href="#">Замки для офиса</a></li>
+                                            <li><a href="#">Замки для шкафчиков</a></li>
+                                        </ul>
+                                    </div><!-- end col-3 -->
+
+                                    <div class="col-lg-3 col-6">
+                                        <h6 class="title">Механические замки</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Врезные замки</a></li>
+                                            <li><a href="#">Замки для квартиры</a></li>
+                                            <li><a href="#">Замки для дома</a></li>
+                                            <li><a href="#">Замки для отелей</a></li>
+                                        </ul>
+                                    </div><!-- end col-3 -->
+
+                                    <div class="col-lg-3 col-6">
+                                        <h6 class="title">Декоративные замки</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Врезные замки</a></li>
+                                            <li><a href="#">Замки для квартиры</a></li>
+                                            <li><a href="#">Замки для дома</a></li>
+                                            <li><a href="#">Замки для отелей</a></li>
+                                            <li><a href="#">Замки для офиса</a></li>
+                                            <li><a href="#">Замки для шкафчиков</a></li>
+                                            <li><a href="#">Замки для шкафчиков</a></li>
+                                        </ul>
+                                    </div><!-- end col-3 -->
+
+                                    <div class="col-lg-3 col-6">
+                                        <h6 class="title">Составные замки</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Врезные замки</a></li>
+                                            <li><a href="#">Замки для квартиры</a></li>
+                                            <li><a href="#">Замки для дома</a></li>
+                                            <li><a href="#">Замки для отелей</a></li>
+                                            <li><a href="#">Замки для офиса</a></li>
+                                            <li><a href="#">Замки для шкафчиков</a></li>
+                                        </ul>
+                                    </div><!-- end col-3 -->
+                                </div>
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Оптовая продажа</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                    </ul>
+
+                </div><!-- ./collapse navbar-collapse -->
+
+                <div class="navbar-side">
+                    <ul>
+                        <li class="navbar-phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+12345678900">+1(234)56 78 900</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"><i
+                                    class="fa-regular fa-user"></i></a>
+                            <ul class="dropdown-menu animate slideIn">
+                                <li><a href="#" class="dropdown-item">Регистрация</a></li>
+                                <li><a href="#" class="dropdown-item">Авторизация</a></li>
+                                <li><a href="#" class="dropdown-item">Личный кабинет</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form action="" class="search-form">
+                        <input class="form-control" type="text" name="s" placeholder="Поиск товара..." required>
+                        <button id="search-form-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+
+                </div><!-- ./navbar-side -->
+
+            </div>
+        </nav>
+
+    </header>
+
     <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

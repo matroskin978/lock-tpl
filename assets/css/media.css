@@ -1,0 +1,16 @@
+@media all and (max-width: 992px) {
+
+    .callback {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    .top-line {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+}

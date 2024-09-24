@@ -70,3 +70,24 @@ img {
 }
 
 /* ==================General==================== */
+
+
+/* ==================Header==================== */
+
+.top-line {
+    background-color: var(--grey-color);
+    color: var(--bg-color);
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.top-line a {
+    color: var(--bg-color);
+    transition: all .3s;
+}
+
+.top-line a:hover {
+    color: var(--main-color);
+}
+
+/* ==================Header==================== */
