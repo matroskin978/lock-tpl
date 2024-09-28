@@ -1,4 +1,16 @@
-@media all and (max-width: 992px) {
+@media all and (min-width: 992px) {
+
+    .dropdown:hover>.dropdown-toggle::after {
+        content: "\f077";
+    }
+
+}
+
+@media all and (max-width: 991.98px) {
+
+    .dropdown-toggle.show::after {
+        content: "\f077";
+    }
 
     .callback {
         display: none;
