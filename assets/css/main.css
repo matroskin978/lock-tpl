@@ -77,6 +77,26 @@ img {
     border: 0;
 }
 
+.animate {
+    animation-duration: .3s;
+}
+
+.slideIn {
+    animation-name: slideIn;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
 /* ==================General==================== */
 
 
@@ -200,6 +220,75 @@ img {
 .search-form .form-control.show {
     width: 100%;
     opacity: 1;
+}
+
+.top-navbar .dropdown-menu {
+    box-shadow: 0 4px 18px -2px rgba(0, 0, 0, .1);
+}
+
+.megamenu {
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.megamenu .title {
+    border-bottom: 1px solid var(--main-color);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.megamenu li {
+    margin-bottom: 10px;
+}
+
+.megamenu a {
+    color: var(--grey-color);
+    font-size: 16px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.megamenu a:hover {
+    color: var(--black-color);
+    text-decoration: underline;
+}
+
+.mobile-phones ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+.mobile-phones a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.mobile-phones-phone i {
+    color: var(--main-color);
+}
+
+.mobile-phones-callback a {
+    font-weight: 600;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2822, 28, 36, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* ==================Header==================== */

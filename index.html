@@ -34,80 +34,99 @@
                     <img src="assets/img/logo.svg" alt="">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown has-megamenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Каталог
-                            </a>
-                            <div class="container dropdown-menu megamenu animate slideIn" role="menu">
-                                <div class="row g-3">
-                                    <div class="col-lg-3 col-6">
-                                        <h6 class="title">Электронные замки</h6>
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Врезные замки</a></li>
-                                            <li><a href="#">Замки для квартиры</a></li>
-                                            <li><a href="#">Замки для дома</a></li>
-                                            <li><a href="#">Замки для отелей</a></li>
-                                            <li><a href="#">Замки для офиса</a></li>
-                                            <li><a href="#">Замки для шкафчиков</a></li>
-                                        </ul>
-                                    </div><!-- end col-3 -->
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
 
-                                    <div class="col-lg-3 col-6">
-                                        <h6 class="title">Механические замки</h6>
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Врезные замки</a></li>
-                                            <li><a href="#">Замки для квартиры</a></li>
-                                            <li><a href="#">Замки для дома</a></li>
-                                            <li><a href="#">Замки для отелей</a></li>
-                                        </ul>
-                                    </div><!-- end col-3 -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-lg-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Каталог
+                                </a>
+                                <div class="container dropdown-menu megamenu animate slideIn" role="menu">
+                                    <div class="row g-3">
+                                        <div class="col-lg-3 col-6">
+                                            <h6 class="title">Электронные замки</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Врезные замки</a></li>
+                                                <li><a href="#">Замки для квартиры</a></li>
+                                                <li><a href="#">Замки для дома</a></li>
+                                                <li><a href="#">Замки для отелей</a></li>
+                                                <li><a href="#">Замки для офиса</a></li>
+                                                <li><a href="#">Замки для шкафчиков</a></li>
+                                            </ul>
+                                        </div><!-- end col-3 -->
 
-                                    <div class="col-lg-3 col-6">
-                                        <h6 class="title">Декоративные замки</h6>
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Врезные замки</a></li>
-                                            <li><a href="#">Замки для квартиры</a></li>
-                                            <li><a href="#">Замки для дома</a></li>
-                                            <li><a href="#">Замки для отелей</a></li>
-                                            <li><a href="#">Замки для офиса</a></li>
-                                            <li><a href="#">Замки для шкафчиков</a></li>
-                                            <li><a href="#">Замки для шкафчиков</a></li>
-                                        </ul>
-                                    </div><!-- end col-3 -->
+                                        <div class="col-lg-3 col-6">
+                                            <h6 class="title">Механические замки</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Врезные замки</a></li>
+                                                <li><a href="#">Замки для квартиры</a></li>
+                                                <li><a href="#">Замки для дома</a></li>
+                                                <li><a href="#">Замки для отелей</a></li>
+                                            </ul>
+                                        </div><!-- end col-3 -->
 
-                                    <div class="col-lg-3 col-6">
-                                        <h6 class="title">Составные замки</h6>
-                                        <ul class="list-unstyled">
-                                            <li><a href="#">Врезные замки</a></li>
-                                            <li><a href="#">Замки для квартиры</a></li>
-                                            <li><a href="#">Замки для дома</a></li>
-                                            <li><a href="#">Замки для отелей</a></li>
-                                            <li><a href="#">Замки для офиса</a></li>
-                                            <li><a href="#">Замки для шкафчиков</a></li>
-                                        </ul>
-                                    </div><!-- end col-3 -->
-                                </div>
-                            </div> <!-- dropdown-mega-menu.// -->
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Оптовая продажа</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">О нас</a>
-                        </li>
-                    </ul>
+                                        <div class="col-lg-3 col-6">
+                                            <h6 class="title">Декоративные замки</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Врезные замки</a></li>
+                                                <li><a href="#">Замки для квартиры</a></li>
+                                                <li><a href="#">Замки для дома</a></li>
+                                                <li><a href="#">Замки для отелей</a></li>
+                                                <li><a href="#">Замки для офиса</a></li>
+                                                <li><a href="#">Замки для шкафчиков</a></li>
+                                                <li><a href="#">Замки для шкафчиков</a></li>
+                                            </ul>
+                                        </div><!-- end col-3 -->
 
-                </div><!-- ./collapse navbar-collapse -->
+                                        <div class="col-lg-3 col-6">
+                                            <h6 class="title">Составные замки</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Врезные замки</a></li>
+                                                <li><a href="#">Замки для квартиры</a></li>
+                                                <li><a href="#">Замки для дома</a></li>
+                                                <li><a href="#">Замки для отелей</a></li>
+                                                <li><a href="#">Замки для офиса</a></li>
+                                                <li><a href="#">Замки для шкафчиков</a></li>
+                                            </ul>
+                                        </div><!-- end col-3 -->
+                                    </div>
+                                </div> <!-- dropdown-mega-menu.// -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Оптовая продажа</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">О нас</a>
+                            </li>
+                        </ul>
+
+                        <div class="mobile-phones d-block d-lg-none">
+                            <ul>
+                                <li class="mobile-phones-phone">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <a href="tel:+12345678900">+1(234)56 78 900</a>
+                                </li>
+                                <li class="mobile-phones-callback">
+                                    <a href="#">Обратный звонок</a>
+                                </li>
+                            </ul>
+                        </div><!-- ./mobile-phones -->
+
+                    </div><!-- ./offcanvas-body -->
+
+                </div><!-- ./offcanvas -->
 
                 <div class="navbar-side">
                     <ul>

@@ -4,6 +4,30 @@
         content: "\f077";
     }
 
+    .top-navbar .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .navbar-side .dropdown-menu-end {
+        right: 0;
+        left: auto;
+    }
+
+    .has-megamenu {
+        position: static;
+    }
+
+    .dropdown-menu.megamenu {
+        top: auto;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .dropdown-menu.dropdown-menu-end {
+        top: auto;
+        margin-top: 0;
+    }
 }
 
 @media all and (max-width: 991.98px) {
@@ -12,8 +36,27 @@
         content: "\f077";
     }
 
-    .callback {
+    .callback,
+    .navbar-phone {
         display: none;
+    }
+
+    .navbar-brand {
+        margin-right: 10px;
+    }
+
+    .navbar-side>ul {
+        gap: 17px;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid var(--stroke-color);
     }
 
 }
