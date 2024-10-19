@@ -4,8 +4,20 @@
         content: "\f077";
     }
 
+    .top-navbar .dropdown-menu {
+        transform: translateY(10px);
+        transition: all .3s;
+        opacity: 0;
+        display: block;
+        visibility: hidden;
+        transition-delay: .2s;
+    }
+
     .top-navbar .dropdown:hover>.dropdown-menu {
         display: block;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
     }
 
     .navbar-side .dropdown-menu-end {
@@ -37,12 +49,17 @@
     }
 
     .callback,
-    .navbar-phone {
+    .navbar-phone,
+    .top-text {
         display: none;
     }
 
+    .top-phone {
+        margin: auto;
+    }
+
     .navbar-brand {
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
 
     .navbar-side>ul {
