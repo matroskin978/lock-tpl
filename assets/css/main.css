@@ -333,4 +333,48 @@ img {
     margin-top: 15px;
 }
 
+.slider .carousel-control-prev,
+.slider .carousel-control-next {
+    position: relative;
+    background-color: transparent !important;
+}
+
+.slider .carousel .carousel-indicators .btn-dot {
+    background-color: #add7ff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.slider .carousel .carousel-indicators .btn-dot.active {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid #add7ff;
+}
+
+.slider .carousel .carousel-indicators .btn-dot.active::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--main-color);
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.slider .carousel {
+    padding-bottom: 50px;
+}
+
+.slider .carousel .carousel-indicators {
+    bottom: 10px;
+}
+
+.slider {
+    margin-bottom: 100px;
+}
+
 /* ==================Slider==================== */

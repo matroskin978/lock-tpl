@@ -174,14 +174,27 @@
 
     <section class="slider">
         <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carousel-indicators" class="carousel slide" data-bs-theme="dark" data-bs-ride="carousel"
+                data-bs-interval="5000">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0"
+                        class="btn-dot active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="1" class="btn-dot"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="2" class="btn-dot"
                         aria-label="Slide 3"></button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-indicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -191,7 +204,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="carousel-text">
-                                    <h5>Golden Soft<br>GS-200Z-5 для офиса</h5>
+                                    <h5>Golden Soft GS-200Z-5 для офиса</h5>
                                     <div class="carousel-desc">
                                         <p>Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый
                                             блеск, четкие линии, красивые формы.</p>
@@ -214,7 +227,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="carousel-text">
-                                    <h5>Golden Soft<br>GS-200Z-5 для квартиры</h5>
+                                    <h5>Golden Soft GS-200Z-5 для квартиры</h5>
                                     <div class="carousel-desc">
                                         <p>Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый
                                             блеск, четкие линии, красивые формы.</p>
@@ -237,7 +250,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="carousel-text">
-                                    <h5>Golden Soft<br>GS-200Z-5 универсальный</h5>
+                                    <h5>Golden Soft GS-200Z-5 универсальный</h5>
                                     <div class="carousel-desc">
                                         <p>Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный глянцевый
                                             блеск, четкие линии, красивые формы.</p>
@@ -254,19 +267,11 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
     </section>
+
+
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
