@@ -4,6 +4,7 @@
     --black-color: #161c24;
     --main-color: #4295e4;
     --main-light-color: #56A9F8;
+    --main-light-color2: #f2f8ff;
     --stroke-color: #eaeaea;
 }
 
@@ -373,8 +374,25 @@ img {
     bottom: 10px;
 }
 
-.slider {
+
+/* ==================Slider==================== */
+
+/* ==================Achievments==================== */
+
+.achievments {
+    background-color: var(--main-light-color2);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
     margin-bottom: 100px;
 }
 
-/* ==================Slider==================== */
+.achievments h3 {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    opacity: 0;
+}
+
+/* ==================Achievments==================== */
