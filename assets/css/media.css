@@ -78,6 +78,14 @@
 
 }
 
+@media all and (min-width: 768.98px) {
+
+    .main-categories-add-title {
+        display: none;
+    }
+
+}
+
 @media all and (max-width: 768px) {
 
     .top-line {
@@ -136,6 +144,55 @@
     .achievments span {
         font-size: 14px;
         line-height: 24px;
+    }
+
+    .why-us {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .why-us h1 {
+        font-size: 22px;
+        line-height: 34px;
+        margin-bottom: 25px;
+    }
+
+    .why-us-card {
+        border: 0;
+        border-top: 1px solid var(--stroke-color2);
+        border-bottom: 1px solid var(--stroke-color2);
+        padding: 20px;
+        height: 100%;
+    }
+
+    .why-us-card p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 15px;
+    }
+
+    .main-categories-card {
+        padding: 0;
+    }
+
+    .main-categories-card-thumb img {
+        height: 200px;
+    }
+
+    .main-categories-card-desc {
+        display: none;
+    }
+
+    .main-all-ategories {
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+
+    .main-categories-card-thumb img {
+        height: 150px;
     }
 
 }

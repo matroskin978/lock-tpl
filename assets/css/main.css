@@ -6,6 +6,7 @@
     --main-light-color: #56A9F8;
     --main-light-color2: #f2f8ff;
     --stroke-color: #eaeaea;
+    --stroke-color2: #c4cdd5;
 }
 
 @font-face {
@@ -66,6 +67,16 @@ body {
     color: var(--grey-color);
 }
 
+section h1,
+section h2 {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 62px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -117,8 +128,7 @@ img {
 }
 
 .top-navbar {
-    box-shadow: inset 0 -1px 0 #C4CDD5;
-    /* border-bottom: 1px solid #C4CDD5; */
+    box-shadow: inset 0 -1px 0 var(--stroke-color2);
 }
 
 .navbar-brand {
@@ -384,7 +394,6 @@ img {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
-    margin-bottom: 100px;
 }
 
 .achievments h3 {
@@ -396,3 +405,72 @@ img {
 }
 
 /* ==================Achievments==================== */
+
+/* ==================Why Us==================== */
+
+.why-us {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.why-us-card {
+    border-left: 1px solid var(--stroke-color2);
+    border-right: 1px solid var(--stroke-color2);
+    padding: 20px;
+    height: 100%;
+}
+
+.why-us-card p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 30px;
+}
+
+/* ==================Why Us==================== */
+
+/* ==================Main Categories==================== */
+
+.main-categories {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.main-categories-card {
+    background-color: #fafafa;
+    padding: 40px;
+}
+
+.main-categories-card-thumb {
+    text-align: right;
+}
+
+.main-categories-card-thumb img {
+    height: 300px;
+    object-fit: cover;
+    transition: transform .3s;
+}
+
+.main-categories-card-thumb img:hover {
+    transform: scale(1.2);
+}
+
+.main-categories-card-desc h3 {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.main-categories-card-desc .btn {
+    padding: 12px 70px;
+}
+
+.main-categories-add-title {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--black-color);
+    margin-top: 10px;
+}
+
+/* ==================Main Categories==================== */
