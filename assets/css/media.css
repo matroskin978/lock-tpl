@@ -187,12 +187,21 @@
         width: 100%;
     }
 
+    .main-our-products h2 {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
 }
 
 @media all and (max-width: 500px) {
 
     .main-categories-card-thumb img {
         height: 150px;
+    }
+
+    .main-our-products-top .slider-btn-wrap {
+        display: none;
     }
 
 }
