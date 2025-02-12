@@ -13,23 +13,26 @@ $(function () {
     // $('.counter-num').spincrement();
 
     let counterBox = $('.achievments');
-    let counterItem = $('.counter-num');
-    let showCounter = true;
+    if (counterBox.length) {
+        let counterItem = $('.counter-num');
+        let showCounter = true;
 
-    $(window).on('scroll load resize', function () {
-        let counterBoxTop = counterBox.offset().top;
-        let windowHeight = window.innerHeight;
-        let windowTop = $(window).scrollTop();
+        $(window).on('scroll load resize', function () {
+            let counterBoxTop = counterBox.offset().top;
+            let windowHeight = window.innerHeight;
+            let windowTop = $(window).scrollTop();
 
-        if (showCounter && (counterBoxTop + 200 < windowTop + windowHeight)) {
-            showCounter = false;
-            counterItem.css('opacity', 1);
-            counterItem.spincrement({
-                duration: 2000
-            });
-            // console.log(counterBoxTop, windowHeight, windowTop);
-        }
-    });
+            if (showCounter && (counterBoxTop + 200 < windowTop + windowHeight)) {
+                showCounter = false;
+                counterItem.css('opacity', 1);
+                counterItem.spincrement({
+                    duration: 2000
+                });
+                // console.log(counterBoxTop, windowHeight, windowTop);
+            }
+        });
+    }
+
 
     const mainOlwProducts = $('.owl-carousel').owlCarousel({
         // loop: true,
@@ -78,5 +81,19 @@ $(function () {
     });
 
     $(".phone-mask").mask("+3(999) 999-9999");
+
+    const topBtn = $('#top');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+
+    topBtn.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
 
 });
