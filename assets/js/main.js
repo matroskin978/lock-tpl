@@ -1,5 +1,33 @@
 $(function () {
 
+    let sliderRange = $('#slider-range');
+    if (sliderRange) {
+        let minPriceInput = $('#min-price');
+        let maxPriceInput = $('#max-price');
+        $("#slider-range").slider({
+            range: true,
+            min: minPrice,
+            max: maxPrice,
+            values: [minPrice, maxPrice],
+            slide: function (event, ui) {
+                minPriceInput.val(ui.values[0]);
+                maxPriceInput.val(ui.values[1]);
+            }
+        });
+
+        $('#min-price, #max-price').on('input', function () {
+            let minPriceRange = +minPriceInput.val();
+            let maxPriceRange = +maxPriceInput.val();
+            if (minPriceRange > maxPriceRange) {
+                minPriceRange = maxPriceRange;
+                minPriceInput.val(minPriceRange);
+            }
+            sliderRange.slider({
+                values: [minPriceRange, maxPriceRange]
+            });
+        });
+    }
+
     $('#search-form-btn').on('click', function (e) {
         e.preventDefault();
         let form = $(this).parent();

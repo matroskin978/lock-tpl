@@ -771,3 +771,109 @@ main.main {
 }
 
 /* ==================Catalog Page==================== */
+
+/* ==================Category Page==================== */
+
+.category-page h1 {
+    color: #000;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.category-page .btn-outline-primary {
+    border: 1px solid #add7ff;
+    color: var(--black-color);
+}
+
+.category-page .btn-outline-primary:hover {
+    color: #fff;
+}
+
+.filters {
+    padding: 25px;
+    border: 1px solid #c4cdd5;
+    margin-top: 30px;
+}
+
+.filters h3 {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+#filters-accordion .accordion-item {
+    border-left: 0;
+    border-right: 0;
+    padding-bottom: 15px;
+}
+
+#filters-accordion .accordion-item:first-child {
+    border-top: 0;
+}
+
+#filters-accordion .accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#filters-accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+#filters-accordion .accordion-button,
+#filters-accordion .accordion-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#filters-accordion .accordion-body {
+    margin-bottom: 5px;
+}
+
+.filter-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-price input {
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    border-radius: 0;
+    -moz-appearance: textfield;
+}
+
+.filter-price input::-webkit-outer-spin-button,
+.filter-price input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.filter-price .form-control:focus {
+    border-color: var(--main-color);
+    box-shadow: none;
+}
+
+#filters-accordion .ui-slider-horizontal {
+    height: 6px;
+    border: 1px solid transparent;
+    background-color: #eaeaea;
+}
+
+#filters-accordion .ui-slider-range {
+    background: var(--main-color);
+}
+
+#filters-accordion .ui-slider-handle {
+    top: -0.5em;
+    border: 1px solid var(--main-color);
+    background-color: #fff;
+}
+
+/* ==================Category Page==================== */
