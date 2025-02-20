@@ -40,6 +40,10 @@
         top: auto;
         margin-top: 0;
     }
+
+    #filters-accordion {
+        display: block;
+    }
 }
 
 @media all and (max-width: 991.98px) {
@@ -103,6 +107,11 @@
     .footer-top {
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+
+    #filters-accordion #slider-range {
+        width: 97%;
+        margin: auto;
     }
 
 }
@@ -219,6 +228,10 @@
     .main-our-products h2 {
         font-size: 22px;
         line-height: 34px;
+    }
+
+    #filters-accordion #slider-range {
+        width: 95%;
     }
 
 }
