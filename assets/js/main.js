@@ -1,7 +1,7 @@
 $(function () {
 
     let sliderRange = $('#slider-range');
-    if (sliderRange) {
+    if (sliderRange.length) {
         let minPriceInput = $('#min-price');
         let maxPriceInput = $('#max-price');
         $("#slider-range").slider({
