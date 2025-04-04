@@ -67,10 +67,30 @@ body {
     color: var(--grey-color);
 }
 
-section h1,
-section h2 {
+::selection {
+    background-color: #aef1fc;
+}
+
+.note-float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.note-float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+h1,
+h2 {
     color: var(--black-color);
     font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+section h1,
+section h2 {
     font-size: 44px;
     line-height: 62px;
     margin-bottom: 50px;
@@ -990,6 +1010,53 @@ main.main {
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.pagination .page-item {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.pagination .page-item:first-child {
+    margin-right: 20px;
+}
+
+.pagination .page-item:last-child {
+    margin-left: 20px;
+}
+
+.pagination .page-link {
+    border: 0;
+    color: #181818;
+}
+
+.pagination .active .page-link {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.pagination .disabled .page-link {
+    color: var(--stroke-color2);
+    background-color: transparent;
+}
+
+.category-description {
+    margin-bottom: 50px;
+}
+
+.category-description ul {
+    list-style: none;
+    padding-left: 0;
+    column-count: 2;
+}
+
+.category-description ul li::before {
+    content: "\f14a";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 10px;
+    color: var(--main-color);
 }
 
 /* ==================Category Page==================== */
