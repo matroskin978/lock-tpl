@@ -1059,4 +1059,42 @@ main.main {
     color: var(--main-color);
 }
 
+.selected-filters p {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.selected-filters i {
+    color: #e44286;
+}
+
 /* ==================Category Page==================== */
+
+/* ==================Product Page==================== */
+
+.swiper-gallery {
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.swiper-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+
+.swiper-thumbs .swiper-slide-thumb-active,
+.swiper-thumbs .swiper-slide:hover {
+    opacity: 1;
+}
+
+.product-main-desc h1 {
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--black-color);
+}
+
+/* ==================Product Page==================== */

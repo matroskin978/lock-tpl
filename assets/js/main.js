@@ -1,5 +1,36 @@
 $(function () {
 
+    var swiperThumbs = new Swiper(".swiper-thumbs", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true
+    });
+
+    var swiperGallery = new Swiper(".swiper-gallery", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        centeredSlides: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiperThumbs,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 20
+            },
+            992: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+        }
+    });
+
+
     let sliderRange = $('#slider-range');
     if (sliderRange.length) {
         let minPriceInput = $('#min-price');

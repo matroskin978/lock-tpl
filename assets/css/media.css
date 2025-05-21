@@ -114,6 +114,19 @@
         margin: auto;
     }
 
+    .swiper-gallery {
+        background-color: transparent;
+    }
+
+    .swiper-thumbs {
+        display: none;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
 }
 
 @media all and (min-width: 768.98px) {
