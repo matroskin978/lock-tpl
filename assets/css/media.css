@@ -247,6 +247,10 @@
         width: 95%;
     }
 
+    .product-main-desc-add2cart {
+        gap: 10px;
+    }
+
 }
 
 @media all and (max-width: 575px) {
