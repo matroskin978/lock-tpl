@@ -127,6 +127,18 @@
         display: none;
     }
 
+    .review-card .card-header {
+        display: block;
+        position: relative;
+    }
+
+    .review-card .card-header .review-rating {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
 }
 
 @media all and (min-width: 768.98px) {
@@ -251,6 +263,11 @@
         gap: 10px;
     }
 
+    .product-desc-tabs .nav-link {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+
 }
 
 @media all and (max-width: 575px) {
@@ -270,6 +287,15 @@
 
     .main-our-products-top .slider-btn-wrap {
         display: none;
+    }
+
+    .product-desc-tabs .nav-link {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .review-card .card-header .review-rating {
+        transform: translateY(-10%);
     }
 
 }
