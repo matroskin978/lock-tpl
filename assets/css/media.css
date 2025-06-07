@@ -41,7 +41,8 @@
         margin-top: 0;
     }
 
-    #filters-accordion {
+    #filters-accordion,
+    #reply-form {
         display: block;
     }
 }
